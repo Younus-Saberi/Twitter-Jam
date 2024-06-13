@@ -184,3 +184,65 @@ This API provides endpoints for user-related operations.
 - **Description**: Updates the profile information of the current user.
 - **Authorization**: JWT Token in the Authorization header.
 
+---
+
+# Post API Documentation
+
+This API provides endpoints for managing posts.
+
+## Get Tags
+
+- **URL**: `/api/v1/post/tags`
+- **Method**: `GET`
+- **Description**: Retrieves a list of all tags used in posts.
+- **Authorization**: Not required.
+
+## Get Posts
+
+- **URL**: `/api/v1/post`
+- **Method**: `GET`
+- **Description**: Retrieves a list of posts based on provided tag.
+- **Authorization**: Not required.
+
+## Get Post
+
+- **URL**: `/api/v1/post/:id`
+- **Method**: `GET`
+- **Description**: Retrieves a specific post by ID.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Add Post
+
+- **URL**: `/api/v1/post`
+- **Method**: `POST`
+- **Description**: Creates a new post.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Toggle Like
+
+- **URL**: `/api/v1/post/:id/togglelike`
+- **Method**: `GET`
+- **Description**: Toggles like on a post.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Toggle Retweet
+
+- **URL**: `/api/v1/post/:id/toggleRetweet`
+- **Method**: `GET`
+- **Description**: Toggles retweet on a post.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Add Comment
+
+- **URL**: `/api/v1/post/:id/comments`
+- **Method**: `POST`
+- **Description**: Adds a comment to a post.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Search Post
+
+- **URL**: `/api/v1/post/search`
+- **Method**: `GET`
+- **Description**: Searches posts by caption or tag.
+- **Authorization**: Not required.
+
