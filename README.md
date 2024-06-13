@@ -138,3 +138,49 @@ This API provides endpoints for user authentication.
 
 ---
 
+# User API Documentation
+
+This API provides endpoints for user-related operations.
+
+## Get Users
+
+- **URL**: `/api/v1/user`
+- **Method**: `GET`
+- **Description**: Retrieves a list of users.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Get User Feed
+
+- **URL**: `/api/v1/user/feed`
+- **Method**: `GET`
+- **Description**: Retrieves the feed of posts from users that the current user follows.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Get User Profile
+
+- **URL**: `/api/v1/user/:username`
+- **Method**: `GET`
+- **Description**: Retrieves the profile of a specific user.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Follow User
+
+- **URL**: `/api/v1/user/:id/follow`
+- **Method**: `GET`
+- **Description**: Follows a user.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Unfollow User
+
+- **URL**: `/api/v1/user/:id/unfollow`
+- **Method**: `GET`
+- **Description**: Unfollows a user.
+- **Authorization**: JWT Token in the Authorization header.
+
+## Edit User Profile
+
+- **URL**: `/api/v1/user`
+- **Method**: `PUT`
+- **Description**: Updates the profile information of the current user.
+- **Authorization**: JWT Token in the Authorization header.
+
